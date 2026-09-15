@@ -1,0 +1,1013 @@
+  <!DOCTYPE html>
+<html>
+  <head>
+    <title>Mero Profile Card</title>
+    <style>
+      body {
+        background-color: #eef2f3;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+      }
+      .card {
+        background-color: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        max-width: 350px;
+        width: 100%;
+      }
+      .profile-img {
+        width: 100%;
+        border-radius: 8px;
+      }
+      h2 {
+        color: #333;
+        margin-top: 15px;
+      }
+      input[type="text"], input[type="email"] {
+        width: 90%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      .btn {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="card">
+      <img src="profile.jpg" alt="Mero Photo" class="profile-img">
+      
+      <h2>Laxmi Prasad Bishowkarma</h2>
+      <p>Mobile bata Web Designing sikdai chhu.</p>
+      
+      <hr>
+
+      <h3>Mero Info Form</h3>
+      <form>
+        <label>Naam:</label><br>
+        <input type="text" placeholder="Aafno naam"><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female<br><br>
+
+        <label>Hobbies:</label><br>
+        <input type="checkbox" value="coding"> Coding
+        <input type="checkbox" value="music"> Music<br><br>
+
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+
+  </body>
+</html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mero Interactive Card</title>
+    <style>
+      body {
+        background-color: #eef2f3;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      /* Navigation Bar */
+      .navbar {
+        background-color: #333;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        font-weight: bold;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+      }
+      .card {
+        background-color: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        max-width: 350px;
+        width: 100%;
+      }
+      .profile-img {
+        width: 100%;
+        border-radius: 8px;
+      }
+      h2 {
+        color: #333;
+        margin-top: 15px;
+      }
+      input[type="text"] {
+        width: 90%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      .btn {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Nav Bar -->
+    <div class="navbar">
+      Mero Portfolio Website
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <img src="https://picsum.photos/300/200" alt="Mero Photo" class="profile-img">
+        
+        <h2>Laxmi Prasad Bishowkarma</h2>
+        <p>Mobile bata Web Designing sikdai chhu.</p>
+        
+        <hr>
+
+        <h3>Mero Info Form</h3>
+        <form id="myForm">
+          <label>Naam:</label><br>
+          <input type="text" id="username" placeholder="Aafno naam lekhnus"><br>
+
+          <button type="button" class="btn" onclick="submitMessage()">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- JavaScript code -->
+    <script>
+      function submitMessage() {
+        var name = document.getElementById("username").value;
+        if (name === "") {
+          alert("Kripaya aafno naam lekhnuhos!");
+        } else {
+          alert("Namaste " + name + "! Tapaiko form submit bhayo.");
+        }
+      }
+    </script>
+
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mero Profile Card</title>
+    <style>
+      body {
+        background-color: #eef2f3;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .navbar {
+        background-color: #333;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        font-weight: bold;
+        width: 100%;
+      }
+      .container {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+      }
+      .card {
+        background-color: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        max-width: 350px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .profile-img {
+        width: 100%;
+        border-radius: 8px;
+      }
+      h2 {
+        color: #333;
+        margin-top: 15px;
+      }
+      input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      .btn {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="navbar">
+      Mero Portfolio Website
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <img src="https://picsum.photos/300/200" alt="Mero Photo" class="profile-img">
+        
+        <h2>Laxmi Prasad Bishowkarma</h2>
+        <p>Mobile bata Web Designing sikdai chhu.</p>
+        
+        <hr>
+
+        <h3>Mero Info Form</h3>
+        <form>
+          <label>Naam:</label><br>
+          <input type="text" id="username" placeholder="Aafno naam lekhnus"><br>
+
+          <button type="button" class="btn" onclick="submitMessage()">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function submitMessage() {
+        var name = document.getElementById("username").value;
+        if (name === "") {
+          alert("Kripaya aafno naam lekhnuhos!");
+        } else {
+          alert("Namaste " + name + "! Tapaiko form submit bhayo.");
+        }
+      }
+    </script>
+
+  </body>
+</html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mero Profile Card</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #eef2f3;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .navbar {
+        background-color: #333;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        font-weight: bold;
+        width: 100%;
+      }
+      .container {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+      }
+      .card {
+        background-color: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        max-width: 350px;
+        width: 100%;
+      }
+      .profile-img {
+        width: 100%;
+        border-radius: 8px;
+      }
+      h2 {
+        color: #333;
+        margin-top: 15px;
+      }
+      input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      .btn {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="navbar">
+      Mero Portfolio Website
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <img src="https://picsum.photos/300/200" alt="Mero Photo" class="profile-img">
+        
+        <h2>Laxmi Prasad Bishowkarma</h2>
+        <p>Mobile bata Web Designing sikdai chhu.</p>
+        
+        <hr>
+
+        <h3>Mero Info Form</h3>
+        <form>
+          <label>Naam:</label><br>
+          <input type="text" id="username" placeholder="Aafno naam lekhnus"><br>
+
+          <button type="button" class="btn" onclick="submitMessage()">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function submitMessage() {
+        var name = document.getElementById("username").value;
+        if (name === "") {
+          alert("Kripaya aafno naam lekhnuhos!");
+        } else {
+          alert("Namaste " + name + "! Tapaiko form submit bhayo.");
+        }
+      }
+    </script>
+
+  </body>
+</html><!DOCTYPE html>
+<html>
+  <head>
+    <title>Dark Mode Portfolio</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #eef2f3;
+        color: #333;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        transition: 0.3s;
+      }
+      /* Dark Theme Style */
+      .dark-theme {
+        background-color: #1a1a1a;
+        color: #ffffff;
+      }
+      .dark-theme .card {
+        background-color: #2d2d2d;
+        color: #ffffff;
+      }
+      .dark-theme h2 {
+        color: #ffffff;
+      }
+      
+      .navbar {
+        background-color: #333;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        font-weight: bold;
+      }
+      .container {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+      }
+      .card {
+        background-color: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        max-width: 350px;
+        width: 100%;
+      }
+      .profile-img {
+        width: 100%;
+        border-radius: 8px;
+      }
+      .theme-btn {
+        background-color: #555;
+        color: white;
+        padding: 8px 12px;
+        border: none;
+        border-radius: 4px;
+        margin-bottom: 15px;
+        cursor: pointer;
+        width: 100%;
+      }
+      .btn {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="navbar">
+      Mero Portfolio Website
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <!-- Theme Toggle Button -->
+        <button class="theme-btn" onclick="toggleTheme()">Dark / Light Mode</button>
+
+        <img src="https://picsum.photos/300/200" alt="Mero Photo" class="profile-img">
+        
+        <h2>Laxmi Prasad Bishowkarma</h2>
+        <p>Mobile bata Web Designing sikdai chhu.</p>
+        
+        <hr>
+
+        <h3>Mero Info Form</h3>
+        <form>
+          <label>Naam:</label><br>
+          <input type="text" id="username" placeholder="Aafno naam lekhnus" style="width:100%; padding:8px; margin: 8px 0;"><br>
+
+          <button type="button" class="btn" onclick="submitMessage()">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function toggleTheme() {
+        document.body.classList.toggle("dark-theme");
+      }
+
+      function submitMessage() {
+        var name = document.getElementById("username").value;
+        if (name === "") {
+          alert("Kripaya aafno naam lekhnuhos!");
+        } else {
+          alert("Namaste " + name + "! Tapaiko form submit bhayo.");
+        }
+      }
+    </script>
+
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Me</title>
+    <style>
+      body {
+        background-color: #eef2f3;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .navbar {
+        background-color: #333;
+        padding: 15px;
+        text-align: center;
+      }
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+      }
+      .container {
+        padding: 30px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="container">
+      <h2>Contact Page</h2>
+      <p>Email: laxmi@example.com</p>
+      <p>Mobile: +977-9800000000</p>
+    </div>
+
+  </body>
+</html><!DOCTYPE html>
+<html>
+  <head>
+    <title>Animated Portfolio & Tasks</title>
+    <style>
+      * { box-sizing: border-box; }
+      body {
+        background-color: #eef2f3;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        transition: background-color 0.4s ease;
+      }
+      .navbar {
+        background-color: #333;
+        padding: 15px;
+        text-align: center;
+      }
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+      }
+      .container {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+      }
+      .card {
+        background-color: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        max-width: 350px;
+        width: 100%;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      /* Hover Animation */
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      }
+      .btn {
+        background-color: #007bff;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      .btn:hover { background-color: #0056b3; }
+      ul { list-style: none; padding: 0; }
+      li {
+        background: #f4f4f4;
+        margin: 5px 0;
+        padding: 8px;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <h2>Laxmi Prasad Bishowkarma</h2>
+        <p>Mobile bata Web Designing sikdai chhu.</p>
+        
+        <hr>
+
+        <h3>Day 7 Project: Simple To-Do App</h3>
+        <input type="text" id="taskInput" placeholder="Naya kaam lekhnus" style="width:100%; padding:8px; margin-bottom:10px;">
+        <button type="button" class="btn" onclick="addTask()">Task Thapnus</button>
+
+        <ul id="taskList"></ul>
+      </div>
+    </div>
+
+    <script>
+      function addTask() {
+        var input = document.getElementById("taskInput");
+        var taskText = input.value;
+        if (taskText === "") {
+          alert("Kripaya task lekhnuhos!");
+          return;
+        }
+        var li = document.createElement("li");
+        li.textContent = taskText;
+        document.getElementById("taskList").appendChild(li);
+        input.value = "";
+      }
+    </script>
+
+  </body>
+</html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Complete To-Do App</title>
+    <style>
+      * { box-sizing: border-box; }
+      body {
+        background-color: #eef2f3;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+      }
+      .card {
+        background-color: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        max-width: 350px;
+        width: 100%;
+      }
+      .btn {
+        background-color: #007bff;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+        font-size: 16px;
+        margin-top: 5px;
+      }
+      ul { list-style: none; padding: 0; }
+      li {
+        background: #f4f4f4;
+        margin: 8px 0;
+        padding: 10px;
+        border-radius: 4px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .completed {
+        text-decoration: line-through;
+        opacity: 0.6;
+      }
+      .delete-btn {
+        background-color: #ff4d4d;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 4px 8px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="card">
+        <h2>Mero Task Manager</h2>
+        <input type="text" id="taskInput" placeholder="Naya kaam lekhnus" style="width:100%; padding:8px;">
+        <button type="button" class="btn" onclick="addTask()">Task Thapnus</button>
+
+        <ul id="taskList"></ul>
+      </div>
+    </div>
+
+    <script>
+      // Load tasks when page opens
+      window.onload = loadTasks;
+
+      function addTask() {
+        var input = document.getElementById("taskInput");
+        var text = input.value.trim();
+        if (text === "") return alert("Task lekhnuhos!");
+
+        createTaskElement(text, false);
+        saveTasks();
+        input.value = "";
+      }
+
+      function createTaskElement(text, isDone) {
+        var li = document.createElement("li");
+        var span = document.createElement("span");
+        span.textContent = text;
+        if (isDone) span.classList.add("completed");
+        
+        // Click to toggle Complete (Done)
+        span.onclick = function() {
+          span.classList.toggle("completed");
+          saveTasks();
+        };
+
+        // Delete Button
+        var delBtn = document.createElement("button");
+        delBtn.textContent = "X";
+        delBtn.className = "delete-btn";
+        delBtn.onclick = function() {
+          li.remove();
+          saveTasks();
+        };
+
+        li.appendChild(span);
+        li.appendChild(delBtn);
+        document.getElementById("taskList").appendChild(li);
+      }
+
+      function saveTasks() {
+        var tasks = [];
+        var listItems = document.querySelectorAll("#taskList li");
+        listItems.forEach(function(item) {
+          var text = item.querySelector("span").textContent;
+          var isDone = item.querySelector("span").classList.contains("completed");
+          tasks.push({ text: text, completed: isDone });
+        });
+        localStorage.setItem("myTasks", JSON.stringify(tasks));
+      }
+
+      function loadTasks() {
+        var stored = localStorage.getItem("myTasks");
+        if (stored) {
+          var tasks = JSON.parse(stored);
+          tasks.forEach(function(t) { createTaskElement(t.text, t.completed); });
+        }
+      }
+    </script>
+
+  </body>
+</html><!DOCTYPE html>
+<html>
+  <head>
+    <title>Mero Calculator</title>
+    <style>
+      * { box-sizing: border-box; }
+      body {
+        background-color: #eef2f3;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+      }
+      .calculator {
+        background-color: #333;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        width: 300px;
+      }
+      #display {
+        width: 100%;
+        height: 50px;
+        background-color: #222;
+        color: #fff;
+        text-align: right;
+        font-size: 24px;
+        padding: 10px;
+        border: none;
+        border-radius: 6px;
+        margin-bottom: 15px;
+      }
+      .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+      }
+      button {
+        padding: 15px;
+        font-size: 18px;
+        border: none;
+        border-radius: 6px;
+        background-color: #444;
+        color: white;
+        cursor: pointer;
+      }
+      button:active {
+        background-color: #666;
+      }
+      .operator {
+        background-color: #ff9500;
+      }
+      .operator:active {
+        background-color: #e08200;
+      }
+      .clear {
+        background-color: #ff3b30;
+      }
+      .equal {
+        background-color: #34c759;
+        grid-column: span 2;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="calculator">
+      <!-- Display Screen -->
+      <input type="text" id="display" readonly>
+
+      <!-- Calculator Buttons -->
+      <div class="buttons">
+        <button class="clear" onclick="clearDisplay()">C</button>
+        <button onclick="appendValue('/')" class="operator">÷</button>
+        <button onclick="appendValue('*')" class="operator">×</button>
+        <button onclick="appendValue('-')" class="operator">-</button>
+
+        <button onclick="appendValue('7')">7</button>
+        <button onclick="appendValue('8')">8</button>
+        <button onclick="appendValue('9')">9</button>
+        <button onclick="appendValue('+')" class="operator">+</button>
+
+        <button onclick="appendValue('4')">4</button>
+        <button onclick="appendValue('5')">5</button>
+        <button onclick="appendValue('6')">6</button>
+
+        <button onclick="appendValue('1')">1</button>
+        <button onclick="appendValue('2')">2</button>
+        <button onclick="appendValue('3')">3</button>
+
+        <button onclick="appendValue('0')">0</button>
+        <button onclick="appendValue('.')">.</button>
+        <button onclick="calculate()" class="equal">=</button>
+      </div>
+    </div>
+
+    <script>
+      var display = document.getElementById("display");
+
+      function appendValue(val) {
+        display.value += val;
+      }
+
+      function clearDisplay() {
+        display.value = "";
+      }
+
+      function calculate() {
+        try {
+          display.value = eval(display.value);
+        } catch (error) {
+          display.value = "Error";
+        }
+      }
+    </script>
+
+  </body>
+</html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Laxmi Prasad - Web Developer Portfolio</title>
+    <style>
+      * { box-sizing: border-box; }
+      body {
+        background-color: #f4f7f6;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .navbar {
+        background-color: #1e293b;
+        padding: 15px;
+        text-align: center;
+      }
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+      }
+      .hero {
+        text-align: center;
+        padding: 40px 20px;
+        background: #ffffff;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      }
+      .hero img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .gallery-title {
+        text-align: center;
+        margin-top: 30px;
+        color: #333;
+      }
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      .card {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+      }
+      .card h3 {
+        margin-top: 0;
+        color: #007bff;
+      }
+      .btn-link {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 8px 16px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <img src="https://picsum.photos/200" alt="Laxmi Prasad">
+      <h2>Laxmi Prasad Bishowkarma</h2>
+      <p>Frontend Web Developer (Learning via Android / Acode)</p>
+    </div>
+
+    <h2 class="gallery-title">Mero Showcase Projects</h2>
+
+    <!-- Project Gallery Grid -->
+    <div class="projects-grid">
+      
+      <!-- Project 1 -->
+      <div class="card">
+        <h3>1. Interactive Profile & Form</h3>
+        <p>Dynamic form validation, Radio/Checkbox inputs, ra custom alert messages.</p>
+        <span style="color: #28a745; font-size: 12px; font-weight: bold;">Completed</span>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="card">
+        <h3>2. To-Do Task Manager</h3>
+        <p>DOM element creation, task completion toggle, delete button, ra LocalStorage persistence.</p>
+        <span style="color: #28a745; font-size: 12px; font-weight: bold;">Completed</span>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="card">
+        <h3>3. JavaScript Calculator</h3>
+        <p>CSS Grid button layout, math expression parsing using dynamic evaluation, ra error handling.</p>
+        <span style="color: #28a745; font-size: 12px; font-weight: bold;">Completed</span>
+      </div>
+
+    </div>
+
+  </body>
+</html>
+
+
